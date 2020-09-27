@@ -142,15 +142,12 @@ app.get("/:itemListName", function(req, res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 3100;
+  port = 3000;
 }
-
-
-app.listen(port , function(){
-    console.log("Server is running at 3000");
-});
-
-
+ 
+app.listen(port, function() {
+  console.log("Server started succesfully");
+});     
 
 // app.get("/", function(req , res){
     
