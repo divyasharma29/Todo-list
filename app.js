@@ -10,7 +10,8 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb+srv://admin-divya:Test123@cluster0.4nfqe.mongodb.net/todolistDB?retryWrites=true&w=majority", {useUnifiedTopology: true , useNewUrlParser: true  });
+mongoose.connect("mongodb+srv://admin-divya:Test123@cluster0.pha0a.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+
 app.use(express.static("public"));
 
 //view is a folder name which should be there in the main directory where we add our EJS Files.
