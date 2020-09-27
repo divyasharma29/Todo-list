@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb+srv://admin-divya:Test123@cluster0.pha0a.mongodb.net/todolistDB?authSource=admin?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-divya:Test123@cluster0.pha0a.mongodb.net/todolistDB?authSource=admin?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: false});
 
 app.use(express.static("public"));
 
